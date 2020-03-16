@@ -2,25 +2,16 @@ import React from "react"
 // import { Link, graphql } from "gatsby"
 
 export default function ListOfDirectors({ data }) {
-//   const name = data.allContentfulDirectors.edges.node.name
   return (
     <ul>
-      {data.allContentfulDirectors.edges.map(element => {
-          console.log(element.node.name);
- return <li>{element.node.name}</li>
+      {data.allContentfulEn.edges.map(element => {
+        console.log(element.node)
+        return <li>
+         <h3>{element.node.name}</h3> 
+         <h5>{element.node.titleText}</h5>
+         <p>{element.node.directorsInfo.directorsInfo}</p>
+         </li>
       })}
     </ul>
   )
 }
-
-// export const query = graphql`
-// {
-// allContentfulDirectors {
-//     edges {
-//       node {
-//         name
-//       }
-//     }
-//   }
-// }
-// `
