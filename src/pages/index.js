@@ -27,6 +27,30 @@ export const query = graphql`
             directorsInfo
           }
           titleText
+          map {
+            lat
+            lon
+          }
+          lang
+          works {
+            listOfWorks {
+              film
+              year
+            }
+          }
+          timeline {
+            timelineData {
+              date
+              description
+            }
+          }
+          birthPlace
+          birthDate
+          photo {
+            file {
+              url
+            }
+          }
         }
       }
     }
