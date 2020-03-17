@@ -1,16 +1,15 @@
-import React from "react"
+import React from "react";
+import DirectorCard from './DirectorCard';
+import './directors.scss';
+import './media.css';
 // import { Link, graphql } from "gatsby"
 
 export default function ListOfDirectors({ data }) {
   return (
-    <ul>
+    <ul className='directorList_container'>
       {data.allContentfulEn.edges.map(element => {
         console.log(element.node)
-        return <li>
-         <h3>{element.node.name}</h3> 
-         <h5>{element.node.titleText}</h5>
-         <p>{element.node.directorsInfo.directorsInfo}</p>
-         </li>
+        return <DirectorCard director={element.node}/>
       })}
     </ul>
   )
