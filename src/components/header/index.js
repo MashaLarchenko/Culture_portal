@@ -11,12 +11,12 @@ import logo from '../../images/architect-logo-small.png';
 const useStyles = makeStyles(theme => ({
   headerWrapper: {
     boxShadow: '0px 4px 4px #000000',
-    backgroundColor: '#263545',
+    backgroundColor: 'rgba(0, 0, 0, 0.77)',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
     flex: '0 1',
-    marginBottom: '5%',
+    // marginBottom: '5%',
     ['@media (max-width: 1020px)']: { 
         flexDirection: 'column'
     }
@@ -59,6 +59,9 @@ const Header = () => {
                     <Typography variant="h1" className={classes.headerTitle} >
                      <Link to={`/`} className={classes.homeLink}>
                         Home page
+                     </Link>
+                     <Link to={`/search`} className={classes.homeLink}>
+                        List of Director
                      </Link>
                    </Typography>
               </Container>

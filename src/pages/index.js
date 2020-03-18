@@ -1,20 +1,24 @@
-import React from "react";
-import { Link, graphql } from "gatsby";
-// import LitOfDirectors from "../components/directors/ListOfDirectors";
-import DirectorOfTheDay from "../components/directors/DirectorOfTheDay";
-import Header from "../components/header/index";
-import About from "../components/mainPage/About";
-import Layout from "../components/layout";
-import Image from "../components/image";
-import SEO from "../components/seo";
+import React from "react"
+import { Link, graphql } from "gatsby"
+import DirectorOfTheDay from "../components/directors/DirectorOfTheDay"
+import Header from "../components/header/index"
+import About from "../components/mainPage/About"
+import { Container } from "@material-ui/core"
+
+import Layout from "../components/layout"
+import Image from "../components/image"
+import SEO from "../components/seo"
 
 const IndexPage = ({ data }) => (
-  <>
+  <div>
     <Header />
-    <About/>
-    <DirectorOfTheDay data={data} />
-    <Link to='/page-2'>To page 2</Link>
-  </>
+    {/* <Container mxWidth='lg' > */}
+      <About />
+      <div className='paralax_img'/>
+      <DirectorOfTheDay data={data} />
+      <Link to="/search">To page 2</Link>
+    {/* </Container> */}
+  </div>
 )
 
 export default IndexPage

@@ -1,6 +1,21 @@
 .main_info {
     font-family: 'Roboto Condensed', sans-serif;
-    background: #787a7b96;
-    color: white;
+    /* background: #787a7b96; */
+    color: black;
     padding: 35px;
+    /* background-image: url(../../images/back.jpg);
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
 }
+/* 
+.info_wrapper {
+    background-image: url(../../images/back.jpg);
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */

@@ -5,7 +5,8 @@ import './about.css';
 
 export default function About() {
   return (
-    <Container className='main_info'>
+      <div className='info_wrapper'>
+          <Container className='main_info'>
       <h2>ИНФОРМАЦИЯ НА ДАННОМ ПОРТАЛЕ ПОСВЯЩЕНА КИНОРЕЖИССЕРАМ БЕЛАРУСИ</h2>
       <p>
         Юрий Викторович Тарич (1885-1967) и Владимир Владимирович Корш-Саблин
@@ -30,5 +31,7 @@ export default function About() {
         создавшими своими работами золотой фонд национального кино Республики
       </p>
     </Container>
+      </div>
+    
   )
 }

@@ -1,15 +1,19 @@
 import React from "react"
-import { Link, graphql } from "gatsby";
-import ListOfDirectors from '../components/directors/ListOfDirectors';
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+import { Link, graphql } from "gatsby"
+import ListOfDirectors from "../components/directors/ListOfDirectors"
+import Header from "../components/header/index"
+import { Container } from "@material-ui/core"
+import SEO from "../components/seo"
 
 const SecondPage = ({ data }) => (
-  <Layout>
-    <SEO title="Page two" />
-  <ListOfDirectors data={data} />
-    <Link to="/">Go back to the homepage</Link>
-  </Layout>
+  <>
+    <Header />
+    <Container maxWidth="lg">
+      <SEO title="Page two" />
+      <ListOfDirectors data={data} />
+      <Link to="/">Go back to the homepage</Link>
+    </Container>
+  </>
 )
 
 export default SecondPage
