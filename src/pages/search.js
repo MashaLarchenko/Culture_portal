@@ -1,6 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import ListOfDirectors from "../components/directors/ListOfDirectors"
+import AuthorsPage from "../components/Search/Input/AllAuthorsPage"
 import Header from "../components/header/index"
 import { Container } from "@material-ui/core"
 import SEO from "../components/seo"
@@ -8,9 +8,10 @@ import SEO from "../components/seo"
 const SecondPage = ({ data }) => (
   <>
     <Header />
-    <Container maxWidth="lg">
+    <Container maxWidth="lg" className="search_page_container">
       <SEO title="Page two" />
-      <ListOfDirectors data={data} />
+      <AuthorsPage/>
+      {/* <ListOfDirectors data={data} /> */}
       <Link to="/">Go back to the homepage</Link>
     </Container>
   </>
@@ -18,42 +19,42 @@ const SecondPage = ({ data }) => (
 
 export default SecondPage
 
-export const query = graphql`
-  {
-    allContentfulEn {
-      edges {
-        node {
-          name
-          directorsInfo {
-            directorsInfo
-          }
-          titleText
-          map {
-            lat
-            lon
-          }
-          lang
-          works {
-            listOfWorks {
-              film
-              year
-            }
-          }
-          timeline {
-            timelineData {
-              date
-              description
-            }
-          }
-          birthPlace
-          birthDate
-          photo {
-            file {
-              url
-            }
-          }
-        }
-      }
-    }
-  }
-`
+// export const query = graphql`
+//   {
+//     allContentfulEn {
+//       edges {
+//         node {
+//           name
+//           directorsInfo {
+//             directorsInfo
+//           }
+//           titleText
+//           map {
+//             lat
+//             lon
+//           }
+//           lang
+//           works {
+//             listOfWorks {
+//               film
+//               year
+//             }
+//           }
+//           timeline {
+//             timelineData {
+//               date
+//               description
+//             }
+//           }
+//           birthPlace
+//           birthDate
+//           photo {
+//             file {
+//               url
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// `
