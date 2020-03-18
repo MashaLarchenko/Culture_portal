@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Typography, Grid, Button } from '@material-ui/core';
+import { Link } from "@reach/router";
 import './directors.scss';
 import './media.css';
 
@@ -33,9 +34,7 @@ export default function DirectorOfTheDay({ data }) {
             <Grid item className='item'>
                 <Button variant="contained" color="default">
                     View
-                    {/* <Link to={'/user/' + architectDataFiltered.path} className=link}>
-                        {i18n.t`MAIN__AUTOR-OF-THE-DAY--BUTTON`}
-                    </Link> */}
+                    <Link to={`/director/${directorOfDay.node.name}`}>View more</Link>
                 </Button>
             </Grid>
         </Grid>
