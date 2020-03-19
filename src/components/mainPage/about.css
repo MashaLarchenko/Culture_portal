@@ -1,21 +1,14 @@
 .main_info {
-    font-family: 'Roboto Condensed', sans-serif;
-    /* background: #787a7b96; */
-    color: black;
-    padding: 35px;
-    /* background-image: url(../../images/back.jpg);
-    height: 100vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
+  font-family: "Roboto Condensed", sans-serif;
+  color: black;
+  padding: 35px;
+  background: #e9efed94;
+  margin-top: 15px;
 }
-/* 
-.info_wrapper {
-    background-image: url(../../images/back.jpg);
-    height: 100vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
+
+.main_info {
+  padding: 4rem;
+  text-align: center;
+  color: #000000;
+  font-size: 1rem;
+}

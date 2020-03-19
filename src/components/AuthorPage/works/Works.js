@@ -10,7 +10,7 @@ const useStyles = makeStyles(theme => ({
     title: {
         textAlign: 'center',
         margin: '20px 0',
-        color: '#4A90E2',
+        color: '#07346a',
         fontWeight: 'bold',
         ['@media (max-width: 490px)']: {
             textAlign: 'center'
@@ -19,14 +19,16 @@ const useStyles = makeStyles(theme => ({
     table: {
         margin: '30px auto',
         boxShadow: '4px 4px 10px #000000',
+        width: '85%'
     },
     tHead: {
-        backgroundColor: '#4A90E2',
+        backgroundColor: '#07346a',
     },
     tableTitle: {
         fontWeight: 'bold',
         fontSize: '1.5rem',
         color: '#ffffff',
+        padding: '20px',
         border: '1px solid #E0E0E0',
         ['@media (max-width: 490px)']: {
             textAlign: 'center',
@@ -45,7 +47,7 @@ const useStyles = makeStyles(theme => ({
     cell: {
         fontSize: '1rem',
         border: '1px solid #E0E0E0',
-        padding: '0.5rem 0.75rem',
+        padding: '20px',
         ['@media (max-width: 490px)']: {
             textAlign: 'center'
         }
@@ -61,13 +63,12 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const Works = ({ data }) => {
-    // console.log()
     const { works } = data;
     const { listOfWorks } = works
     const classes = useStyles();
     const masterpieces = listOfWorks.map((work, index) => {
         const { film, year } = work;
-        const style = index % 2 ? '#cccccc' : '#ffffff';
+        const style = index % 2 ? 'rgba(204, 204, 204, 0.5)' : '#ffffff';
         return ( 
             <TableRow key={index}>
                 <TableCell className={classes.cell} style={{background: style}}>{film}</TableCell>

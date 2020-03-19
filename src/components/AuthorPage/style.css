@@ -1,4 +1,15 @@
 .single_author_wrapper {
-    display: grid;
-    grid-template-rows: 2fr 1fr 1fr;
+  padding-top: 50px;
+  background: rgba(255, 255, 255, 0.35);
+  width: 100%!important;
+
+}
+
+/* .single_container {
+    background-image: url(../../images/back.jpg);
+} */
+
+
+.MuiContainer-root.search_page_container.MuiContainer-maxWidthLg {
+  width: 100%!important;
 }

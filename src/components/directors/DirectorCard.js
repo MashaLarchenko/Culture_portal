@@ -14,14 +14,12 @@ export default function DirectorCard({ director }) {
       <div>
         <Image director={director} />
       </div>
-      <h3>{director.name}</h3>
+      <h3>
+        {director.firstName} {director.name}
+      </h3>
       <h5>{`${director.birthDate}, ${director.birthPlace}`}</h5>
       <p>{director.titleText}</p>
-      <Link to={`/director/${director.name}`}>View more</Link>
-      {/* 
-      <Router>
-        <AuthorPage path="/director/:name" director={director} />
-      </Router> */}
+      <Link to={`/director/${director.name}`} className='button'>View more</Link>
     </li>
   )
 }

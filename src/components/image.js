@@ -28,8 +28,7 @@ const Image = ({ director }) => {
         imageIndex >= 0 ? allImageSharp.nodes[imageIndex].fluid : defaultImg
       }
       alt={director.name}
-      imgStyle={{ objectFit: "cover" }}
-      // maxWidth="300px"
+      imgStyle={{ objectFit: "contain" }}
     />
   )
 }

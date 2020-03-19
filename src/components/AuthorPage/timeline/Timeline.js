@@ -11,12 +11,13 @@ const useStyles = makeStyles(theme => ({
     },
     title: {
         textAlign: 'center',
-        color: '#4A90E2',
+        color: '#07346a',
         fontWeight: 'bold',
     },
     yearTitle: {
-        color: '#4A90E2',
-        fontWeight: 'bold'
+        color: '#07346a',
+        fontWeight: 'bold',
+        fontSize: '0.89rem'
     }
 }));
 
@@ -31,15 +32,15 @@ const TimeLine = ({ data }) => {
                 key={index}
                 dateText={date}
                 dateInnerStyle={{
-                    background: '#4A90E2',
-                    fontSize: '1.25rem',
+                    background: '#f3f2f3',
+                    fontSize: '1.1rem',
                     fontFamily: 'Roboto',
                     color: '#000000'
                 }}
                 bodyContainerStyle={{
-                    background: '#ddd',
-                    padding: '20px',
-                    borderRadius: '8px',
+                    background: 'rgba(67, 66, 66, 0.89)',
+                    padding: '15px',
+                    borderRadius: '5px',
                     boxShadow: '0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2)',
                 }}
             >

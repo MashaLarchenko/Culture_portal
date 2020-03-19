@@ -10,13 +10,13 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 
 const IndexPage = ({ data }) => (
-  <div>
+  <div className="main_wrapper">
     <Header />
     {/* <Container mxWidth='lg' > */}
-      <About />
-      <div className='paralax_img'/>
-      <DirectorOfTheDay data={data} />
-      <Link to="/search">To page 2</Link>
+    <About />
+    <div className="paralax_img" />
+    <DirectorOfTheDay data={data} />
+    <Link to="/search">To page 2</Link>
     {/* </Container> */}
   </div>
 )
@@ -29,27 +29,12 @@ export const query = graphql`
       edges {
         node {
           name
+          firstName
           directorsInfo {
             directorsInfo
           }
           titleText
-          map {
-            lat
-            lon
-          }
           lang
-          works {
-            listOfWorks {
-              film
-              year
-            }
-          }
-          timeline {
-            timelineData {
-              date
-              description
-            }
-          }
           birthPlace
           birthDate
           photo {

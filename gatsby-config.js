@@ -69,13 +69,5 @@ module.exports = {
         plugins: [],
       },
     },
-    // {
-    //   resolve: '@wapps/gatsby-plugin-lingui',
-    //   options: {
-    //     availableLngs: ['en', 'by', 'ru'],
-    //     fallbackLng: 'en',
-    //     siteUrl: 'http:/https://dreamy-chandrasekhar-6ded29.netlify.com/',
-    //   },
-    // },
   ],
 }

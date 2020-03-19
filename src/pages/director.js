@@ -16,9 +16,7 @@ function DirectorPage (...args) {
       <Router>
         <AuthorPage path="/director/:name" author={args[0]['*']} />
       </Router>
-      {/* <AuthorPage author={args[0]['*']}/> */}
-      {/* <ListOfDirectors data={data} /> */}
-      <Link to="/">Go back to the homepage</Link>
+      <Link to="/" className='button'>Go back to the homepage</Link>
     </Container>
   </>
      )

@@ -11,6 +11,7 @@ export default function AuthorsPage() {
         edges {
           node {
             name
+            firstName
             directorsInfo {
               directorsInfo
             }
@@ -58,7 +59,7 @@ export default function AuthorsPage() {
 
 
   return (
-    <Container>
+    <Container className='search_container'>
       <Input placeholder='Search by name or city' setValue={setValue} handleChange={handleChange}/>
       <ListOfDirectors data={data} value={value}/>
     </Container>

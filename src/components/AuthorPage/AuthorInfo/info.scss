@@ -1,13 +1,15 @@
 .author_info_container {
    display: grid;
-   grid-template-columns: 1fr 1fr;
+   grid-template-columns: 1fr 2fr;
    font-family: "Roboto Condensed", sans-serif;
    .about_author_container {
-
+       p {
+         font-size: 0.8rem;
+       }
    }
 }
 
 .gatsby-image-wrapper {
-  width: 50%;
-  height:50%;
+  width: 81%;
+  height: 85%;
 }
