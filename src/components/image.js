@@ -8,7 +8,7 @@ const Image = ({ director }) => {
     query {
       allImageSharp {
         nodes {
-          fluid(maxWidth: 200, maxHeight: 200) {
+          fluid{
             ...GatsbyImageSharpFluid
             originalName
           }
@@ -29,7 +29,7 @@ const Image = ({ director }) => {
       }
       alt={director.name}
       imgStyle={{ objectFit: "cover" }}
-      maxWidth="200px"
+      // maxWidth="300px"
     />
   )
 }

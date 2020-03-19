@@ -56,13 +56,14 @@ link {
 }
 
 .directorList_container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-gap: 5%;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 30%);
+    height: calc(100% - 200px);
+    grid-gap: 2%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 
   li {
     display: grid;
@@ -70,9 +71,15 @@ link {
     justify-content: center;
     height: 100%;
     color: black;
+    font-family: "Roboto Condensed", sans-serif;
+
+    p {
+      font-size: 0.9rem;
+    }
 
     h5 {
-      text-align: center;
+        font-size: 1rem;
+        line-height: 27px;
     }
     div {
       width: 100%;

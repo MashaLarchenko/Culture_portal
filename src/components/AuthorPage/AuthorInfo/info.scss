@@ -1,5 +1,10 @@
 .author_info_container {
-    // height: 200px;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   font-family: "Roboto Condensed", sans-serif;
+   .about_author_container {
+
+   }
 }
 
 .gatsby-image-wrapper {

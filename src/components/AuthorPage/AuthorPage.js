@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from "gatsby";
 import { Container } from "@material-ui/core";
 import AuthorInfo from "./AuthorInfo/AuthorInfo";
 import Gallery from "./Gallery/Gallery";
+import Map from './map/MapComponent';
 
 export default function AuthorPage({ author }) {
   const data = useStaticQuery(graphql`
@@ -57,6 +58,7 @@ export default function AuthorPage({ author }) {
     {/* <h2>{author}</h2> */}
       <AuthorInfo director={authorData[0].node} />
       <Gallery data={authorData[0].node} />
+      <Map data={authorData[0].node}/>
     </Container>
   )
 }
