@@ -3,10 +3,9 @@ import { makeStyles } from "@material-ui/core/styles"
 import Box from "@material-ui/core/Box"
 import Paper from "@material-ui/core/Paper"
 import Typography from "@material-ui/core/Typography"
-
-import { YMaps, Map, Placemark } from "react-yandex-maps"
-
+import { YMaps, Map} from "react-yandex-maps"
 import MapMarker from "./MapMarker"
+import './map.css'
 
 const useStyles = makeStyles(theme => ({
   mapTitle: {
@@ -30,11 +29,6 @@ const useStyles = makeStyles(theme => ({
     margin: "0 auto 20px",
     textAlign: "center",
   },
-  // tooltip: {
-  //     position: 'relative',
-  //     width: 100,
-  //     height: 20%,
-  // }
 }))
 
 export default function MapComponent({ data }) {
@@ -56,15 +50,8 @@ export default function MapComponent({ data }) {
     },
     center: [mapCoord.lat, mapCoord.lon],
   })
-  //   const mapState = {
-  //     center: state.center,
-  //     zoom: 14,
-  //   }
 
-  const mapState = { center: [55.76, 37.64], zoom: 10 }
   const { marker } = state
-  console.log(state)
-
   return (
     <Box id={"map"}>
       <Box>
@@ -83,6 +70,7 @@ export default function MapComponent({ data }) {
               controls: ["zoomControl", "fullscreenControl"],
             }}
             modules={["control.ZoomControl", "control.FullscreenControl"]}
+            className='map'
           >
             <MapMarker marker={marker} />
           </Map>

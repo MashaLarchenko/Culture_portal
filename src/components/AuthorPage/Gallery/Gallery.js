@@ -4,6 +4,7 @@ import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/css/image-gallery.css";
 import { Container, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
+import './slider.css';
 
 const useStyles = makeStyles({
     containerMain: {
@@ -12,7 +13,7 @@ const useStyles = makeStyles({
     },
     title: {
         color: '#4A90E2',
-        fontSize: '3em',
+        fontSize: '2.2em',
         fontWeight: 'bold',
         margin: 'auto',
         padding: '20px 0',

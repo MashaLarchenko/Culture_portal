@@ -4,6 +4,7 @@ import { Container } from "@material-ui/core";
 import AuthorInfo from "./AuthorInfo/AuthorInfo";
 import Gallery from "./Gallery/Gallery";
 import Map from './map/MapComponent';
+import Video from './video/videoContainer'
 
 export default function AuthorPage({ author }) {
   const data = useStaticQuery(graphql`
@@ -35,6 +36,7 @@ export default function AuthorPage({ author }) {
             }
             birthPlace
             birthDate
+            youtube
             photo {
               file {
                 url
@@ -55,9 +57,9 @@ export default function AuthorPage({ author }) {
   })
   return (
     <Container maxWidth='lg' className='single_author_wrapper'>
-    {/* <h2>{author}</h2> */}
       <AuthorInfo director={authorData[0].node} />
-      <Gallery data={authorData[0].node} />
+      <Gallery data={authorData[0].node}/>
+      <Video video={authorData[0].node}/>
       <Map data={authorData[0].node}/>
     </Container>
   )

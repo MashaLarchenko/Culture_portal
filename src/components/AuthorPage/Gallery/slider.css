@@ -1,0 +1,9 @@
+.image-gallery-content .image-gallery-slide .image-gallery-image {
+    width: 100%;
+    max-height: 320px;
+    padding: 10px;
+}
+
+.fullscreen .image-gallery-slide img {
+    max-height: 100vh;
+}
