@@ -5,7 +5,7 @@ import Header from "../components/header/index"
 // import { Container } from "@material-ui/core"
 import SEO from "../components/seo"
 
-const SecondPage = ( ) => (
+const SecondPage = () => (
   <div className="search_page_container">
     <Header />
       <SEO title="Page two" />

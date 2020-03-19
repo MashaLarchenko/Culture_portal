@@ -7,7 +7,6 @@ import { Container } from "@material-ui/core"
 import SEO from "../components/seo"
 
 function DirectorPage (...args) {
-    console.log(args[0]['*']);
      return (   
   <>
     <Header />
