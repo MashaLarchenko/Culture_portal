@@ -44,19 +44,12 @@ module.exports = {
         path: `${__dirname}/src/pages/`,
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `data`,
-        path: `${__dirname}/src/data/`,
-        ignore: [`**/\.*`],
-      },
-    },
     // {
     //   resolve: `gatsby-source-filesystem`,
     //   options: {
-    //     name: `images`,
-    //     path: path.join(__dirname, `src`, `images`, `Authors`),
+    //     name: `data`,
+    //     path: `${__dirname}/src/data/`,
+    //     ignore: [`**/\.*`],
     //   },
     // },
     {
