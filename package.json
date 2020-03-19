@@ -27,7 +27,8 @@
     "react-helmet": "^5.2.1",
     "react-image-gallery": "^1.0.6",
     "react-player": "^1.15.2",
-    "react-yandex-maps": "^4.2.0"
+    "react-yandex-maps": "^4.2.0",
+    "vertical-timeline-component-for-react": "^1.0.6"
   },
   "devDependencies": {
     "prettier": "^1.19.1"
