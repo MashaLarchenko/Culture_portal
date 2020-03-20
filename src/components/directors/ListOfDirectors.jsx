@@ -1,7 +1,5 @@
 import React from "react"
 import DirectorCard from "./DirectorCard"
-import { useStaticQuery, graphql } from "gatsby"
-
 import "./directors.scss"
 import "./media.css"
 
@@ -19,8 +17,8 @@ export default function ListOfDirectors({ data, value }) {
  
   return (
     <ul className="directorList_container">
-      {filteredDirectors.map(element => {
-        return <DirectorCard director={element.node} />
+      {filteredDirectors.map((element, index )=> {
+        return <DirectorCard director={element.node} key={index}/>
       })}
     </ul>
   )

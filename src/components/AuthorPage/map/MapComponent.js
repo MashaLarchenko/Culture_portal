@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import { makeStyles } from "@material-ui/core/styles"
 import Box from "@material-ui/core/Box"
-import Paper from "@material-ui/core/Paper"
 import Typography from "@material-ui/core/Typography"
 import { YMaps, Map} from "react-yandex-maps"
 import MapMarker from "./MapMarker"
@@ -13,9 +12,8 @@ const useStyles = makeStyles(theme => ({
     textAlign: "center",
     padding: theme.spacing(3, 2),
     backgroundColor: "white",
-    color: "black",
+    color: "#07346a",
     position: "absolute",
-    // right: 0
   },
   mapContainer: {
     width: "90%",
@@ -23,12 +21,13 @@ const useStyles = makeStyles(theme => ({
     margin: "auto",
     position: "relative",
   },
-  title: {
-    width: "fit-content",
-    padding: theme.spacing(3, 2),
-    margin: "0 auto 20px",
-    textAlign: "center",
-  },
+  map_title: {
+    color: '#07346a',
+    paddingBottom: '10px',
+    fontSize: '2.5em',
+    textAlign: 'center',
+    fontWeight: 'bold',
+  }
 }))
 
 export default function MapComponent({ data }) {
@@ -54,13 +53,9 @@ export default function MapComponent({ data }) {
   const { marker } = state
   return (
     <Box id={"map"}>
-      <Box>
-        <Paper className={classes.title}>
-          <Typography variant="h5" component="h3">
-            {marker.title}
+          <Typography variant="h3" className={classes.map_title}>
+            Map
           </Typography>
-        </Paper>
-      </Box>
       <Box className={classes.mapContainer}>
         <YMaps>
           <Map

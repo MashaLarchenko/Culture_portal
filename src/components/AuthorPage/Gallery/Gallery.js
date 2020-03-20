@@ -12,7 +12,7 @@ const useStyles = makeStyles({
         textAlign: 'center'
     },
     title: {
-        color: '#4A90E2',
+        color: '#07346a',
         fontSize: '2.2em',
         fontWeight: 'bold',
         margin: 'auto',
@@ -20,9 +20,8 @@ const useStyles = makeStyles({
     },
     containerNested: {
         width: '70%',
-        borderRadius: '10px',
+        padding: '15px',
         margin: '0 auto',
-        boxShadow: '0px 0px 30px #000000',
         ['@media (max-width: 490px)']: {
             width: '90%'
         }
@@ -31,7 +30,6 @@ const useStyles = makeStyles({
 });
 
 export default function Gallery ({ data }) {
- console.log(data)
     const images = [];
     data.gallery.forEach(img => {
         images.push({
@@ -39,9 +37,7 @@ export default function Gallery ({ data }) {
             thumbnail: img.file.url,
         });
     });
-
     const classes = useStyles();
-
     return (
         <Container maxWidth="md" className={classes.containerMain}  id={'gallery'}>
             <Container className={classes.containerNested}>

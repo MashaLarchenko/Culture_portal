@@ -1,24 +1,23 @@
 import React from "react"
-// import { Link, Router } from "gatsby"
-import { Router, Link } from "@reach/router"
+import { Router } from "@reach/router"
 import AuthorPage from "../components/AuthorPage/AuthorPage"
-import Header from "../components/header/index"
 import { Container } from "@material-ui/core"
+import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-function DirectorPage (...args) {
-     return (   
-  <>
-    <Header />
-    <Container maxWidth="lg" className="search_page_container">
-      <SEO title="Page two" />
-      <Router>
-        <AuthorPage path="/director/:name" author={args[0]['*']} />
-      </Router>
-      <Link to="/" className='button'>Go back to the homepage</Link>
-    </Container>
-  </>
-     )
+function DirectorPage(...args) {
+  return (
+    <Layout>
+      <Container maxWidth="lg" className="search_page_container">
+        <SEO title="Page two" />
+        <Router>
+          <AuthorPage path="/director/:name" author={args[0]["*"]} />
+        </Router>
+      </Container>
+    </Layout>
+
+    // </>
+  )
 }
 
 export default DirectorPage

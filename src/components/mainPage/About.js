@@ -5,8 +5,8 @@ import "./about.css"
 export default function About() {
   return (
       <Container className="main_info" maxWidth='lg'>
-        <h2>ИНФОРМАЦИЯ НА ДАННОМ ПОРТАЛЕ ПОСВЯЩЕНА КИНОРЕЖИССЕРАМ БЕЛАРУСИ</h2>
-        <p>
+        <h2 data-sal="zoom-out" data-sal-delay="300" data-sal-easing="ease">ИНФОРМАЦИЯ НА ДАННОМ ПОРТАЛЕ ПОСВЯЩЕНА КИНОРЕЖИССЕРАМ БЕЛАРУСИ</h2>
+        <p data-sal="fade" data-sal-delay="400" data-sal-easing="ease">
           Юрий Викторович Тарич (1885-1967) и Владимир Владимирович Корш-Саблин
           (1900—1974) считаются основоположниками белорусского кино. Они
           навсегда вошли в историю белорусского кино, как первые отечественные

@@ -7,7 +7,6 @@ const SearchInput = ({ placeholder, handleChange, setValue }) => {
           <input
             type="text"
             placeholder={placeholder}
-            // className={`form-control ${innerClasses}`}
             onChange={handleChange} />
 	    </div>
 	)

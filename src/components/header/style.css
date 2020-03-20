@@ -1,0 +1,21 @@
+.inner_header_container {
+  display: flex;
+  width: 26%;
+  justify-content: space-evenly;
+}
+
+.headerLogo {
+  font-size: 2rem;
+}
+
+@media (max-width: 800px) {
+  .inner_header_container {
+    width: 50%;
+  }
+}
+
+@media (max-width: 490px) {
+  .inner_header_container a {
+    font-size: 0.7rem;
+  }
+}

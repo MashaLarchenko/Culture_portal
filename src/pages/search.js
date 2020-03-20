@@ -1,17 +1,15 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
 import AuthorsPage from "../components/Search/Input/AllAuthorsPage"
-import Header from "../components/header/index"
-// import { Container } from "@material-ui/core"
+import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const SecondPage = () => (
-  <div className="search_page_container">
-    <Header />
+  <Layout>
+    <div className="search_page_container">
       <SEO title="Page two" />
-      <AuthorsPage/>
-      <Link to="/">Go back to the homepage</Link>
-  </div>
+      <AuthorsPage />
+    </div>
+  </Layout>
 )
 
 export default SecondPage

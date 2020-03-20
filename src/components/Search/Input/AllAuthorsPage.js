@@ -46,22 +46,24 @@ export default function AuthorsPage() {
     }
   `)
 
-  const [value, setValue] = useState('');
+  const [value, setValue] = useState("")
 
-   const handleChange = (e) => {
-     if(e.target.value) {
-      setValue (e.target.value);
-     } else {
-      setValue('');
-     }
-   }
-
-
+  const handleChange = e => {
+    if (e.target.value) {
+      setValue(e.target.value)
+    } else {
+      setValue("")
+    }
+  }
 
   return (
-    <Container className='search_container'>
-      <Input placeholder='Search by name or city' setValue={setValue} handleChange={handleChange}/>
-      <ListOfDirectors data={data} value={value}/>
+    <Container className="search_container">
+      <Input
+        placeholder="Search by name or city"
+        setValue={setValue}
+        handleChange={handleChange}
+      />
+      <ListOfDirectors data={data} value={value} />
     </Container>
   )
 }

@@ -1,12 +1,8 @@
-import React from "react"
-import { Link } from "gatsby"
-// import { Link } from '@wapps/gatsby-plugin-lingui';
-import { Container, Typography, Toolbar } from "@material-ui/core"
-import { makeStyles } from "@material-ui/core/styles"
-// import { withI18n } from '@lingui/react';
-// import Menu from './menu';
-// import 'typeface-roboto';
-import logo from "../../images/architect-logo-small.png"
+import React from "react";
+import { Link } from "gatsby";
+import { Container, Toolbar } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
+import './style.css';
 
 const useStyles = makeStyles(theme => ({
   headerWrapper: {
@@ -15,8 +11,6 @@ const useStyles = makeStyles(theme => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
-    flex: "0 1",
-    // marginBottom: '5%',
     ["@media (max-width: 1020px)"]: {
       flexDirection: "column",
     },
@@ -36,29 +30,27 @@ const useStyles = makeStyles(theme => ({
       justifyContent: "center",
     },
   },
-  headerTitle: {
-    fontSize: "2rem",
-    textAlign: "center",
-    padding: "10px",
-    ["@media (max-width: 490px)"]: {
-      flex: "0 1",
-      textAlign: "left",
-    },
-  },
   homeLink: {
     textDecoration: "none",
     color: "#ffffff",
+    fontSize: '1.2rem',
+  },
+  logoImg: {
+    fontSize: '1.8rem',
+    ["@media (max-width: 490px)"]: {
+      fontSize: "0.8rem",
+      lineHeight: '30px',
+    },
   },
 }))
 
 const Header = () => {
-  const classes = useStyles()
-  // const { i18n } = props;
+  const classes = useStyles();
   return (
     <Toolbar className={classes.headerWrapper}>
       <Container className={classes.containerLogo}>
-        <img src={logo} alt="Main page" />
-        <div>
+        <Link to='/' className={classes.logoImg}><span className='headerLogo'>📽</span> Directors of Belarus</Link>
+        <div className='inner_header_container'>
           <Link to={`/`} className={classes.homeLink}>
             Home page
           </Link>
@@ -66,14 +58,7 @@ const Header = () => {
             List of Director
           </Link>
         </div>
-        {/* <Typography variant="h1" className={classes.headerTitle} >
-                 
-                   </Typography>
-                   <Typography variant="h2" className={classes.headerTitle} >
-                    
-                   </Typography> */}
       </Container>
-      {/* <Menu /> */}
     </Toolbar>
   )
 }

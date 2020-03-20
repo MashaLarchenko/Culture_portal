@@ -1,5 +1,5 @@
 import React from "react"
-import { Container, Typography, Grid, Button } from "@material-ui/core"
+import { Container } from "@material-ui/core"
 import { Link } from "@reach/router"
 import "./directors.scss"
 import "./media.css"
@@ -12,48 +12,27 @@ export default function DirectorOfTheDay({ data }) {
   const allDirectors = data.allContentfulEn.edges
   const date = getDate()
   const currentAuthor = date % (allDirectors.length - 1)
-  //   const randomNum = Math.floor(Math.random() * (9 - 1)) + 1
   const directorOfDay = allDirectors[currentAuthor].node
   return (
     <Container className="directorOfTheDay" maxWidth="lg">
-      <Typography variant="h5" className="title">
-        Director of the day
-      </Typography>
-      <Grid container className="container">
-        <Grid item className="infoWrapper">
-          <Grid item className="item">
-            <Typography variant="h6">{directorOfDay.name}</Typography>
-          </Grid>
-          <Grid item className="item">
-            <Typography variant="body1">{directorOfDay.birthDate}</Typography>
-          </Grid>
-          <Grid item className="item">
-            <Typography variant="body2">
-              {directorOfDay.directorsInfo.directorsInfo}
-            </Typography>
-          </Grid>
-          <Grid item className="item">
-            <Button variant="contained" color="default">
-              <Link to={`/director/${directorOfDay.name}`}>View more</Link>
-            </Button>
-          </Grid>
-        </Grid>
-        <Grid item className="architectImageWrapper">
-          <img
-            alt={directorOfDay.name}
-            src={directorOfDay.photo.file.url}
-            width="150"
-            height="150"
-          />
-        </Grid>
-      </Grid>
+      <h3 className="title">Director of the day</h3>
+      <article className="container">
+        <div item className="infoWrapper">
+          <h5>
+            {directorOfDay.firstName} {directorOfDay.name}
+          </h5>
+          <p>{directorOfDay.birthDate}</p>
+          <p>{directorOfDay.directorsInfo.directorsInfo}</p>
+          <Link to={`/director/${directorOfDay.name}`} className="button">
+            View more
+          </Link>
+        </div>
+        <img
+          alt={directorOfDay.name}
+          src={directorOfDay.photo.file.url}
+          height="100%"
+        />
+      </article>
     </Container>
-    // <>
-    //   <h3>{directorOfDay.node.name}</h3>
-    //   <h5>{directorOfDay.node.titleText}</h5>
-    //   <h5>{directorOfDay.node.birthPlace}</h5>
-    //   <h5>{directorOfDay.node.birthDate}</h5>
-    //   <p>{directorOfDay.node.directorsInfo.directorsInfo}</p>
-    // </>
   )
 }

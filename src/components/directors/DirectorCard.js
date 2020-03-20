@@ -1,12 +1,6 @@
 import React from "react"
-// import { useStaticQuery, graphql } from "gatsby";
-// import { Link, Router } from "gatsby"
-import { Router, Link } from "@reach/router"
-
-// import Img from "gatsby-image";
+import { Link } from "@reach/router"
 import Image from "../image"
-import AuthorPage from "../../pages/director"
-import defaultImg from "../../images/directors/Belousov/gallery/pic1.png"
 
 export default function DirectorCard({ director }) {
   return (
