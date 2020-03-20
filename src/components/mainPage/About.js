@@ -4,31 +4,32 @@ import "./about.css"
 
 export default function About() {
   return (
-      <Container className="main_info" maxWidth='lg'>
-        <h2 data-sal="zoom-out" data-sal-delay="300" data-sal-easing="ease">ИНФОРМАЦИЯ НА ДАННОМ ПОРТАЛЕ ПОСВЯЩЕНА КИНОРЕЖИССЕРАМ БЕЛАРУСИ</h2>
-        <p data-sal="fade" data-sal-delay="400" data-sal-easing="ease">
-          Юрий Викторович Тарич (1885-1967) и Владимир Владимирович Корш-Саблин
-          (1900—1974) считаются основоположниками белорусского кино. Они
-          навсегда вошли в историю белорусского кино, как первые отечественные
-          сценаристы и режиссеры. На «Беларусьфильме» снято более 500
-          художественных фильмов, несколько тысяч документальных и около 100
-          мультфильмов. В годы Великой Отечественной войны здесь также
-          выпускался киножурнал «Советская Белоруссия», содержащий фронтовую
-          хронику. В 1996 году киностудия получила новое название —
-          «Национальная киностудия «Беларусьфильм», a работы белорусских
-          кинематографистов неоднократно были отмечены наградами различных
-          международных фестивалей. Кстати, Союз кинематографистов Белоруссии
-          был основан в 1962 году. Режиссер, чтобы стать успешным в своем деле,
-          должен отличаться тонким чутьем на качественные идеи, на потрясающие
-          сценарии, время выхода картины, потребности публики. Он ищет средства,
-          интересует инвесторов и продюсеров, подбирает актеров и съемочную
-          группу, руководит процессом создания и монтажа фильма. Для режиссуры
-          кино и телевидения постепенно становится все меньше и меньше преград и
-          ограничений, поскольку спектр обязанностей режиссера растет. Сегодня
-          Беларусь по праву гордится многими талантливыми режиссерами, актерами,
-          художниками и операторами, создавшими своими работами золотой фонд
-          национального кино Республики
-        </p>
-      </Container>
+    <Container className="main_info" maxWidth="lg">
+      <h2 data-sal="zoom-out" data-sal-delay="300" data-sal-easing="ease">
+        INFORMATION ON THIS PORTAL IS DEDICATED TO FILM DIRECTORS OF BELARUS
+      </h2>
+      <p data-sal="fade" data-sal-delay="400" data-sal-easing="ease">
+        Yuri Viktorovich Tarich (1885-1967) and Vladimir Vladimirovich
+        Korsh-Sablin (1900 - 1974) are considered as the founders of Belarusian
+        cinema. They have forever entered the history of Belarusian cinema as
+        the first domestic writers and directors. More than 500 feature films,
+        several thousand documentaries and about 100 cartoons were shot at
+        "Belarusian Film." During the Second World War there was also produced a
+        film magazine "Soviet Belarus," containing a front chronicle. In 1996,
+        the film studio received a new name - "National Film Studio" Belarusian
+        Film. " And the works of Belarusian cinematographers were repeatedly
+        awarded at various international festivals. By the way, the Union of
+        Cinematographers of Belarus was founded in 1962. In order to become
+        successful in his business, the director must be characterized by a
+        subtle flair for qualitative ideas, for amazing scenarios, the time of
+        release of the picture, the needs of the public. He seeks funds,
+        interests investors and producers, selects actors and film crew, directs
+        the process of creating and making the film. The amount of of obstacles
+        and restrictions for directing cinema and television gradually becomes
+        less and less as the range of duties of the director grow. Today Belarus
+        is proud of many talented directors, actors, artists and operators who
+        have created gold fund of national cinema of the Republic
+      </p>
+    </Container>
   )
 }
