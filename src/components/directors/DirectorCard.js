@@ -3,6 +3,7 @@ import { Link } from "@reach/router"
 import Image from "../image"
 
 export default function DirectorCard({ director }) {
+  console.log()
   return (
     <li>
       <div>

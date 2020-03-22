@@ -18,7 +18,6 @@ const useStyles = makeStyles(theme => ({
   containerLogo: {
     margin: "0",
     padding: "0",
-    width: "auto",
     display: "flex",
     alignItems: "center",
     width: '100%',

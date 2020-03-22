@@ -21,7 +21,6 @@ const Image = ({ director }) => {
     const imgUrlname = el.fluid.originalName.split(".")[0]
     return imgUrlname === director.name
   })
-
   return (
     <Img
       fluid={

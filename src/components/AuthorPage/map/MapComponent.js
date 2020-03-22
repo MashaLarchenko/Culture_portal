@@ -32,7 +32,6 @@ const useStyles = makeStyles(theme => ({
 
 export default function MapComponent({ data }) {
   const mapCoord = data.map
-  console.log(data.map)
   const classes = useStyles()
   const [state] = useState({
     marker: {

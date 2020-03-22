@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import DirectorOfTheDay from "../components/directors/DirectorOfTheDay"
 import About from "../components/mainPage/About"
 import Layout from "../components/layout"

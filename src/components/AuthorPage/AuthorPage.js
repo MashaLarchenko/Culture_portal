@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import { Container } from "@material-ui/core"
 import AuthorInfo from "./AuthorInfo/AuthorInfo"
 import Gallery from "./Gallery/Gallery"
